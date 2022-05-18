@@ -126,7 +126,7 @@ nav ul{
 @media screen and (max-width: 1080px) {
 
   .container{
-    margin: 10vw auto;
+    margin: 5vw auto;
     width: 75vw;
     height: 80vw;
 
@@ -155,6 +155,11 @@ nav ul{
 }
 
 @media screen and (max-width: 650px) {
+  
+  .container{
+    margin: 10vw auto;
+  
+  }
   
   .box-bottone > button {
     font-size: 2.5vw;
