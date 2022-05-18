@@ -1,0 +1,168 @@
+* {
+  margin:0px;
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+
+}
+
+body{
+
+  background: url(../src/background.jpg) no-repeat fixed center top;
+  background-size: cover;
+
+
+
+}
+
+.container{
+  margin: 2vw auto;
+  width: 70vw;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: white;
+  border-radius: 20px;
+
+}
+
+ #img {
+  margin-top: 5vw;
+  width: 20%;
+  height: auto;
+
+}
+
+#title{
+  margin-bottom: 1.1vw;
+  color: #32CD32;
+  font-size: 1.8vw;
+
+}
+
+/* definizione delle flex box  e rimozione delle proprietà di default della ul*/
+nav ul{
+  margin:auto;
+  width: 80%;
+  background-color: #32CD32;
+  border-radius: 10px;
+  padding-left: 0px;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+
+}
+
+/* style dei bottoni e transizione del colore  */
+.box-bottone > button{
+  background-color: #32CD32;
+  border: none;
+  text-align: center;
+  border-radius: 5px;
+  color: white;
+  font-size: 1vw;
+  font-weight: bold;
+  padding: 0.5vw 2vw 0.5vw 2vw;
+
+}
+
+.box-bottone >button:hover {
+  color: #32CD32;
+  background-color: white;
+
+}
+
+/* checkbox monopattino posizione */
+.content{
+  margin: auto;
+  text-align: left;
+  width: 80.5%;
+  padding-bottom: 4vw;
+  font-size: 1.2vw;
+
+}
+
+.monopattino{
+  margin-top: 2vw;
+}
+
+.monopattino > input,h3{
+  display: inline-block;
+
+}
+
+.monopattino > input {
+  width: 1.2vw;
+  height: 1.2vw;
+}
+
+.posizione:before{
+  content: "\21A6";
+
+}
+
+/* barre di carica */
+.charge{
+  height: 1vw;
+  border-radius: 10px;
+  margin-top: 0.5vw;
+
+}
+
+.charge.halfway{
+  background-color: orange;
+  width: 40%;
+}
+
+.charge.full{
+  background-color: #32CD32;
+  width: 80%;
+}
+.charge.empty{
+  background-color: red;
+  width: 15%;
+}
+
+/* resizing del font  e delle dimensioni*/
+@media screen and (max-width: 1080px) {
+
+  .container{
+    width: 75vw;
+    height: 80vw;
+
+  }
+
+  #img {
+    width: 30%;
+  }
+
+  #title{
+    font-size: 3vw;
+  }
+
+  nav ul{
+    width: 85%;
+
+  }
+  .box-bottone > button{
+    font-size: 1.9vw;
+
+  }
+  .content{
+    font-size: 1.8vw;
+    width: 85.5%;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .container{
+    margin: 10vw auto;
+  }
+  .box-bottone > button {
+    font-size: 2.5vw;
+    border-radius: 10px;
+  }
+  nav ul {
+    justify-content: space-between;
+  }
+
+}
